@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "aplicacion superlista"
+        version     = "1.0.0"
+        versionCode = "10" >
+
+        <!-- versionCode is optional and Android only -->
+
+        <preference name="phonegap-version" value="3.7.0" />
+
+        <name>Superlista</name>
+
+        <description>
+        	aplicación para la materia Tecnología de las comunicaciones III
+        </description>
+
+        <author href="http://anaparlante.netau.net" 
+			email="analauraparlante@gmail.com">
+        	Ana Laura Parlante
+        </author>
+
+
+    <!--
+	Habilitar permisos individuales
+  	Se requiere el permiso "dispositivo" para el evento 'deviceready'.
+	-->
+    <feature name="http://api.phonegap.com/1.0/device" />
+	
+	<!--Por ej el permiso para geolocalización
+	<feature name="http://api.phonegap.com/1.0/geolocation" />-->
+    <!--
+	Si no se desea otros permisos agregamos la siguiente etiqueta 
+	Siempre queda INTERNET que requiere PhoneGap.-->
+    <preference name="permissions" value="none"/>
+	
+
+    <!-- Personalizar la aplicación y la plataforma con los elementos 
+	de preferencias.  -->
+    
+	<preference name="phonegap-version" value="3.7.0" /> 
+	<!-- la versión actual de PhoneGap  -->
+	
+    <preference name="orientation" value="portrait" /> 
+	<!-- Por defecto ambos habilitados ("default") -->
+	
+    <preference name="target-device" value="universal" /> 
+	<!-- valores: teléfono, tablet o universal -->
+	
+    <preference name="fullscreen" value="true" /> 
+	<!-- oculta la barra de estado en la parte superior de la pantalla -->
+	
+    <preference name="webviewbounce" value="true" /> 
+	<!-- ios: controla si "rebota" la pantalla cuando se scrollea más allá 
+	del borde superior -->
+	
+    <preference name="prerendered-icon" value="true" /> 
+	<!-- ios: si agrega brillo al ícono en pantalla principal -->
+	
+    <preference name="stay-in-webview" value="false" /> 
+	<!-- ios: los enlaces externos se abren en navegador -->
+	
+    <preference name="ios-statusbarstyle" value="black-opaque" /> 
+	<!-- ios: negro opaco cuando el contenido no llega por debajo de la 
+	barra de estado -->
+	
+    <preference name="detect-data-types" value="true" /> 
+	<!-- ios: si los datos del teléfono o fechas se convierte en enlaces 
+	por default por el sistema -->
+	
+    <preference name="exit-on-suspend" value="false" /> 
+	<!-- ios: en true la aplicación termina al presionar el botón inicio -->
+	
+    <preference name="show-splash-screen-spinner" value="true" /> 
+	<!-- ios: maneja el icono de loading cuando se carga la app -->
+	
+    <preference name="auto-hide-splash-screen" value="true" /> 
+	<!-- ios: en false la pantalla de presentación se debe ocultar 
+	con javaScript -->
+	
+    <preference name="disable-cursor" value="false" /> 
+	<!-- blackberry: impide que se muestre un cursor o ícono de mouse -->
+	
+    <preference name="android-minSdkVersion" value="7" /> 
+	<!-- android: mínima versión del SDK que admite el dispositivo, la 
+	máxima está vacía en forma predeterminada -->
+	
+    <preference name="android-installLocation" value="auto" /> 
+	<!-- android: lugar de instalación, Auto: elige InternalOnly: en 
+	la memoria del dispositivo y PreferExternal: en tarjeta de memoria-->
+
+
+    <!-- Icono de la aplicación para cada plataforma -->
+	
+	<!--Icono general que usarán todos los dispositivos-->
+    <icon src="icon.png" />
+	
+	<!-- Iconos para cada tipo de resolución y plataforma (descomentar
+	SOLO el que se usa)
+    <icon src="res/icon/android/icon-36-ldpi.png" 
+		gap:platform="android" gap:density="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png" 
+		gap:platform="android" gap:density="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png" 
+		gap:platform="android" gap:density="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png" 
+		gap:platform="android" gap:density="xhdpi" />
+		
+    <icon src="res/icon/blackberry/icon-80.png" 
+		gap:platform="blackberry" />
+    <icon src="res/icon/blackberry/icon-80.png" 
+		gap:platform="blackberry" gap:state="hover"/>
+		
+    <icon src="res/icon/ios/icon-57.png" 
+		gap:platform="ios" width="57" height="57" />
+    <icon src="res/icon/ios/icon-72.png" 
+		gap:platform="ios" width="72" height="72" />
+    <icon src="res/icon/ios/icon-57-2x.png" 
+		gap:platform="ios" width="114" height="114" />
+    <icon src="res/icon/ios/icon-72-2x.png" 
+		gap:platform="ios" width="144" height="144" />
+		
+    <icon src="res/icon/webos/icon-64.png" 
+		gap:platform="webos" />
+		
+    <icon src="res/icon/windows-phone/icon-48.png" 
+		gap:platform="winphone" />
+    <icon src="res/icon/windows-phone/icon-173.png" 
+		gap:platform="winphone" gap:role="background" />
+	-->
+	
+	
+	
+	
+	
+	<!--Podemos incluir un SPLASH SCREEN genérico como hacemos con el 
+	icono, pero los dispositivos deforman la imagen para adaptarla a
+	sus condiciones de pantalla
+    
+  	<gap:splash src="imagenes/splash.png" />-->
+    
+	<gap:splash src="res/screen/android/splash.png" 
+		gap:platform="android" gap:density="mdpi" />
+		
+    <!-- Pantalla de presentación para cada plataforma. 
+	<gap:splash src="res/screen/android/screen-hdpi-portrait.png" 
+		gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" 
+		gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="res/screen/blackberry/screen-225.png" 
+		gap:platform="blackberry" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png" 
+		gap:platform="ios" width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png" 
+		gap:platform="ios" width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png" 
+		gap:platform="ios" width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png" 
+		gap:platform="ios" width="1024" height="768" />
+    <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" 
+		gap:platform="winphone" />
+	-->
+	
+    <!-- Acceso a dominios externos
+	
+	- EN BLANCO: niega el acceso a todos los recursos externos.
+	<access /> 	
+	- ASTERISCO: permite el acceso a todos los recursos externos.			
+	<access origin="*" /> 	
+	- Sino se pueden establecer dominios específicos						
+    <access origin="http://127.0.0.1*"/> -->
+
+</widget>

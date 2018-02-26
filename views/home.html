@@ -1,0 +1,41 @@
+﻿<div class="scrollable" id="contenedor">  
+	<div class="scrollable-content">
+		<div class="scrollable">
+ <div class="scrollable-content section" >
+ 
+	
+			<form name="formulario" ng-submit="guardar(datos)" novalidate>
+			<p class="titulo_form">Nuevo libro</p>
+				<div class="form-group">
+					<ng-input theme='madoka' label='Titulo' ng-required="si" ng-minlength=3 ng-model="datos.titulo" name="titulo" required></ng-input>
+
+				<ng-input theme='madoka' label='Autor' ng-required="si" ng-model="datos.autor" ng-minlength=3 name="autor" ></ng-input>
+
+				<div class="content_select">
+					<label class="label_select" for="Estado">Estado</label>
+					<select name="estado" ng-model="datos.estado" ng-required="si">
+						<option value="Leido">
+							Leido
+						</option>
+
+						<option value="Leyendo">
+							Leyendo
+						</option>
+
+						<option value="Pendiente">
+							Pendiente
+						</option>
+					</select>
+				</div>	
+
+				<ng-input theme='madoka' label='Comentario' ng-required="si" ng-minlength=3 ng-maxlength=100 ng-model="datos.comentario" name="comentario" ></ng-input>
+
+				 <button class="btn btn-primary btn-block button_guardar" ng-disabled="formulario.$invalid">Guardar</button>
+			</form>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+

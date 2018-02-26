@@ -1,0 +1,31 @@
+<div ui-content-for="title">
+  <span>Pendientes</span>
+</div>
+<div class="scrollable" >
+<div class="scrollable-content" >
+<div class="section section">
+
+<div ng-repeat="x in datos_guardados | orderBy:'creado' | filter:{ 'estado' : 'Pendiente' } ">
+	<div class="item_book">
+
+	<div class="content_book">	
+		<img src="img/img_pendiente.jpg" />
+		<p class="portada_libro">{{x.titulo}}</p>
+	</div>	
+
+	<div class="info">
+		<p class="titulo">{{x.titulo }}</p>
+		<p class="autor">{{x.autor }}</p>
+		<p>{{x.comentario}}</p>
+	</div>
+		
+	<div class="content_botones">
+		<button class="button_editar" ng-click="edit(x)">EDITAR</button>
+		<button class="button_borrar" ng-click="borraEsteSolo(x)">BORRAR</button>
+	</div>
+		
+</div>
+</div>
+	
+</div>
+</div>

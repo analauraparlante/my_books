@@ -1,0 +1,133 @@
+.app{background-color: #e1e1e1;}
+
+.navbar-brand img {
+	width: 150px;
+    margin: auto;
+    margin-top: -5px;
+}
+
+.btn-hamburguer {
+	font-size: 25px;
+}
+
+/*--sidebar--*/
+.scrollable {
+	background: #022130;
+}
+
+.menu_item {
+	background: #0d3648;
+	color: #fff !important;
+	text-align: center;
+	height: 70px;
+	font-size: 20px;
+    padding-top: 20px;
+}
+
+.list-group-item.active, .list-group-item.active:focus {
+	background: #ff4806;
+	border-color: #ff4806;
+}
+
+.sidebar .list-group-item, .sidebar a.list-group-item {
+	margin-bottom: 6px;
+    border: 0 none;
+    border-bottom: 0px;
+}
+
+.scrollable-header, .app-name {
+	text-align: center;
+}
+
+/*--fin sidebar--*/
+
+/*--section info--*/
+
+.section-info {
+	padding: 20px;
+}
+
+.section-info img {
+	width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.section_info p {
+	text-align: center;
+    font-size: 16px;
+}
+
+.lista_info {
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+	text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 50px;
+}
+
+.lista_info li {
+	margin-bottom: 5px;
+}
+
+.lista_info p {
+	text-align: center;
+    font-size: 16px;
+}
+
+/*--fin section info--*/
+
+.section-success {background-color: #e1e1e1;
+	color:black;}
+
+.section-success {padding-bottom:10px;
+	padding-top:10px;
+	margin:auto;}
+
+/*.section-success li {border:1px solid black;
+	margin:auto;
+	border-radius:5px;
+	list-style:none;
+	margin-bottom:5px;
+	text-align:center;
+	width:60%;
+	background-color:rgb(6,145,91);
+	color:white;}*/
+
+	
+#header {background-color: #0d3648;
+	color:white;}
+
+#menu{color:white;}
+
+#button1 {background-color:rgb(6,145,91);
+	width:50%;
+	margin:auto;
+	margin-bottom:10px;
+	margin-top:10px;}
+
+#button2 {background-color:red;
+	margin:auto;
+	width:50%;
+	margin-top:10px;}
+
+#guardar {background-color:rgb(6,145,91);
+	width:60%;
+	margin:auto;}
+
+#cantidad, #producto {border-radius:5px;
+	.prod {border:2px solid black;}
+
+.carrito {margin-left:90px;}
+
+.list-group-item{background-color:rgb(81,185,0);}
+
+#vista {width:80%;}
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+<div class="scrollable" id="contenedor">  
+	<div class="scrollable-content">
+		<div class="scrollable">
+ <div class="scrollable-content section" >
+
+			<form name="formulario" ng-submit="update(parametros)">
+				<p class="titulo_form">Editar libro</p>
+				<div class="form-group">
+
+				<ng-input theme='madoka' label='Titulo' ng-required="si" ng-minlength=3 ng-model="parametros.titulo" name="titulo"></ng-input>
+
+				<ng-input theme='madoka' label='Autor' ng-required="si" ng-minlength=3 type="text" ng-model="parametros.autor" name="autor" ></ng-input> 
+
+				<div class="content_select">
+				<label class="label_select" for="Estado">Estado</label>
+					<select name="estado" ng-model="parametros.estado" ng-required="si">
+						<option value="Leido">
+							Leido
+						</option>
+
+						<option value="Leyendo">
+							Leyendo
+						</option>
+
+						<option value="Pendiente">
+							Pendiente
+						</option>
+						
+					</select>
+				</div>
+				
+				<ng-input theme='madoka' label='Comentario' ng-required="si" ng-minlength=3 type="text" ng-model="parametros.comentario" name="comentario" ></ng-input> 
+
+				 <button class="btn btn-primary btn-block button_guardar" ng-disabled="formulario.$invalid">Editar</button>
+			</form>
+			
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
